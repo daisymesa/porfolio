@@ -1,23 +1,33 @@
 header {
-    border: solid red;
-}
+    nav {
+        .nav-bar {
+            .blue-gradient;
+            display: flex;
+            justify-content: flex-end;
+            // border: solid green;
+            padding: 15px 0;
+        }
+    
+        a {
+            font-size: 1.5rem;
+            font-weight: bolder;
+            color: @woodsmoke;
+            padding: 0 30px;
 
-nav {
-    // border: solid blue;
-
-    .nav-bar {
-        background-color: @dodger-blue;
-        display: flex;
-        justify-content: flex-end;
-        border: solid green;
-        padding: 15px 0;
+            &:hover {
+                color: @white;
+            }
+        }
     }
-
-    a {
-        font-size: 1.5rem;
-        font-weight: bolder;
-        color: @white;
-        padding: 0 30px;
+    
+    .top-section {
+        .yellow-gradient;
+        padding: 100px 25px;
+        h1 {
+            color: @cerise-red;
+        }
+        .button-a {
+            margin: 25px 0;
+        }
     }
 }
-

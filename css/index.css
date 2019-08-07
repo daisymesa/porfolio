@@ -1,5 +1,25 @@
+.side-margin {
+  margin: 0 25px;
+}
+.blue-gradient {
+  background: #ffffff;
+  background: linear-gradient(0deg, #ffffff 0%, #1da1f2 100%);
+}
+.blue-gradient {
+  background: #000000;
+  background: linear-gradient(0deg, #000000 0%, #1da1f2 100%);
+}
+.blue-gradient {
+  background: #93d6ff;
+  background: linear-gradient(0deg, #93d6ff 0%, #1da1f2 100%);
+}
+.yellow-gradient {
+  background: #ffd66b;
+  background: linear-gradient(0deg, #ffd66b 0%, #eeb41b 100%);
+}
 * {
   box-sizing: border-box;
+  color: #14171A;
 }
 html {
   font-size: 62.5%;
@@ -9,10 +29,10 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 h1,
-h2 {
+h3 {
   font-family: 'Berkshire Swash', cursive;
 }
-h3,
+h2,
 h4,
 h5 {
   font-family: 'Inknut Antiqua', serif;
@@ -22,16 +42,15 @@ h1 {
 }
 h2 {
   font-size: 3.2rem;
-  padding-bottom: 10px;
+}
+h3 {
+  font-size: 3rem;
 }
 h4 {
-  font-size: 2.5rem;
-  padding-bottom: 10px;
+  font-size: 2rem;
 }
 p {
-  line-height: 1.5;
   font-size: 1.6rem;
-  padding-bottom: 10px;
 }
 img {
   max-width: 100%;
@@ -41,19 +60,120 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-header {
-  border: solid red;
+.button-a {
+  border: 3px solid white;
+  color: white;
+  background: #794BC4;
+  width: 175px;
+  padding: 7px;
+  border-radius: 3px;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  text-align: center;
 }
-nav .nav-bar {
-  background-color: #1DA1F2;
+.button-a:hover {
+  color: #794BC4;
+  background: white;
+  border-color: #794BC4;
+  cursor: pointer;
+}
+.button-b {
+  border: 3px solid white;
+  color: white;
+  background: #E0245E;
+  width: 175px;
+  padding: 7px;
+  border-radius: 3px;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  text-align: center;
+}
+.button-b:hover {
+  color: #E0245E;
+  background: white;
+  border-color: #E0245E;
+  cursor: pointer;
+}
+header nav .nav-bar {
+  background: #ffffff;
+  background: linear-gradient(0deg, #ffffff 0%, #1da1f2 100%);
+  background: #000000;
+  background: linear-gradient(0deg, #000000 0%, #1da1f2 100%);
+  background: #93d6ff;
+  background: linear-gradient(0deg, #93d6ff 0%, #1da1f2 100%);
   display: flex;
   justify-content: flex-end;
-  border: solid green;
   padding: 15px 0;
 }
-nav a {
+header nav a {
   font-size: 1.5rem;
   font-weight: bolder;
-  color: white;
+  color: #14171A;
   padding: 0 30px;
+}
+header nav a:hover {
+  color: white;
+}
+header .top-section {
+  background: #ffd66b;
+  background: linear-gradient(0deg, #ffd66b 0%, #eeb41b 100%);
+  padding: 100px 25px;
+}
+header .top-section h1 {
+  color: #E0245E;
+}
+header .top-section .button-a {
+  margin: 25px 0;
+}
+.home-container .heading-section {
+  padding: 5px 0;
+  background-color: #EEB41B;
+}
+.home-container .heading-section h3 {
+  margin: 0 25px;
+}
+.home-container .intro-section {
+  background: #ffffff;
+  background: linear-gradient(0deg, #ffffff 0%, #1da1f2 100%);
+  background: #000000;
+  background: linear-gradient(0deg, #000000 0%, #1da1f2 100%);
+  background: #93d6ff;
+  background: linear-gradient(0deg, #93d6ff 0%, #1da1f2 100%);
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+.home-container .intro-section p {
+  margin: 0 25px;
+}
+.home-container .projects-container .project-section {
+  padding: 15px 0;
+  background: #ffffff;
+  background: linear-gradient(0deg, #ffffff 0%, #1da1f2 100%);
+  background: #000000;
+  background: linear-gradient(0deg, #000000 0%, #1da1f2 100%);
+  background: #93d6ff;
+  background: linear-gradient(0deg, #93d6ff 0%, #1da1f2 100%);
+}
+.home-container .projects-container .project-section .project-content {
+  margin: 0 25px;
+}
+.home-container .projects-container .project-section .project-content .text-screenshot {
+  padding: 25px 0;
+  display: flex;
+}
+.home-container .projects-container .project-section .project-content .text-screenshot .left-section {
+  margin-right: 50px;
+}
+.home-container .projects-container .project-section .project-content .text-screenshot .screenshot {
+  border: 2px solid black;
+  padding: 100px 175px;
+}
+.home-container .projects-container .project-section .project-content .buttons-section {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+.home-container .projects-container .project-section .project-content .buttons-section .button-a,
+.home-container .projects-container .project-section .project-content .buttons-section .button-b {
+  margin: 25px;
 }
