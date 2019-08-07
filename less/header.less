@@ -1,7 +1,10 @@
 header {
+    .lblue-gradient;
+
     nav {
         .nav-bar {
-            .blue-gradient;
+            // .blue-gradient;
+
             display: flex;
             justify-content: flex-end;
             // border: solid green;
@@ -9,20 +12,25 @@ header {
         }
     
         a {
-            font-size: 1.5rem;
-            font-weight: bolder;
+            font-size: 1.7rem;
+            font-weight: 900;
+            letter-spacing: .25rem;
             color: @woodsmoke;
             padding: 0 30px;
 
             &:hover {
-                color: @white;
+                .grow-hover;
+                color: @woodsmoke;
+                text-decoration: none;
             }
         }
     }
     
     .top-section {
-        .yellow-gradient;
+        // .yellow-gradient;
+        
         padding: 100px 25px;
+        padding-left: 25%;
         h1 {
             color: @cerise-red;
         }

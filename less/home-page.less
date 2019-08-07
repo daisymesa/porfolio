@@ -1,5 +1,6 @@
 .home-container {
     // padding: 0 25px;
+    .lblue-gradient;
 
     .heading-section {
         // border: solid blue;
@@ -11,7 +12,7 @@
     }
 
     .intro-section {
-        .blue-gradient;
+        // .blue-gradient;
         padding-top: 25px;
         padding-bottom: 50px;
 
@@ -20,45 +21,47 @@
         }
     }
 
-    .projects-container {
-        // border: solid blue;
+    .buttons-section {
+        // border: solid orange;
+        display: flex;
+        justify-content: center;
+        padding: 30px;
 
-        .project-section {
-            // border: solid red;
-            padding: 15px 0;
-            .blue-gradient;
+        .button-a, .button-b {
+            margin: 20px;
+        }
+   }
 
-            
-            .project-content {
-                .side-margin;
+    .project-section {
+        // border: solid red;
+        .lblue-gradient;
+        padding: 15px 0;
 
-                .text-screenshot {
-                    // border: solid yellow;
-                    padding: 25px 0;
-                    display: flex;
+        h4, p {
+            .side-margin;
+        }
 
-                    .left-section {
-                        // border: solid purple;
-                        margin-right: 50px;
-                    }
+        .project-content {
 
-                    .screenshot {
-                        border: 2px solid black;
-                        padding: 100px 175px;
-                    }
+            .text-screenshot {
+                // border: solid yellow;
+                padding: 25px 0;
+                display: flex;
+
+                :first-child, :last-child {
+                    margin: 0 15px;
                 }
-                .buttons-section {
-                    // border: solid orange;
-                    display: flex;
-                    justify-content: center;
-                    padding: 30px;
 
-                    .button-a, .button-b {
-                        margin: 25px;
-                    }
-               }
+                .screenshot {
+                    border: 2px solid black;
+                    padding: 100px 175px;
+                }
             }
         }
     }
-}
 
+    .inverted {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
