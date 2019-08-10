@@ -25,44 +25,6 @@
     }
   }
 
-// Gradients
-
-// .blue-gradient {
-//     background: rgb(255,255,255);
-//     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(29,161,242,1) 100%);
-// }
-
-// .blue-gradient {
-//     background: rgb(0,0,0);
-//     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(29,161,242,1) 100%);
-// }
-
-// .blue-gradient {
-//     background: rgb(147,214,255);
-//     background: linear-gradient(0deg, rgba(147,214,255,1) 0%, rgba(29,161,242,1) 100%);
-// }
-
-// .yellow-gradient {
-//     background: rgb(255,214,107);
-//     background: linear-gradient(0deg, rgba(255,214,107,1) 0%, rgba(238,180,27,1) 100%);
-// }
-
-.light-blue-gradient {
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(173,215,255,1) 100%);
-}
-
-.light-blue-gradient {
-    background: rgb(255,255,255);
-    // background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(173,215,255,1) 100%);
-}
-
-.bottom-blue-gradient {
-    background: rgb(173,215,255);
-    background: linear-gradient(0deg, rgba(173,215,255,1) 0%, rgba(255,255,255,1) 100%);
-}
-
-
 // Animations
 @keyframes fadein {
     from {
@@ -88,5 +50,19 @@
     }
 }
 
+.default-nav-styles {
+    a {
+        border: solid red;
+        font-size: 1.7rem;
+        font-weight: 900;
+        letter-spacing: .25rem;
+        color: @woodsmoke;
+        padding: 0 30px;
 
-
+        &:hover {
+            .grow-hover;
+            // color: @woodsmoke;
+            text-decoration: none;
+        }
+    }
+}
