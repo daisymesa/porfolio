@@ -1,6 +1,4 @@
 .home-container {
-    // padding: 0 25px;
-    .lblue-gradient;
 
     .heading-section {
         // border: solid blue;
@@ -12,7 +10,8 @@
     }
 
     .intro-section {
-        // .blue-gradient;
+        
+        .light-blue-gradient;
         padding-top: 25px;
         padding-bottom: 50px;
 
@@ -34,27 +33,29 @@
 
     .project-section {
         // border: solid red;
-        .lblue-gradient;
-        padding: 15px 0;
+        .light-blue-gradient;
+        padding: 40px 0;
 
-        h4, p {
-            .side-margin;
-        }
+        // h4, p {
+        //     .side-margin;
+        // }
 
         .project-content {
 
             .text-screenshot {
                 // border: solid yellow;
-                padding: 25px 0;
+                margin: 25px;
                 display: flex;
+                align-items: center;
 
-                :first-child, :last-child {
-                    margin: 0 15px;
+                .left-section {
+                    // border: solid green;
+                    margin: 0 25px;
                 }
 
                 .screenshot {
                     border: 2px solid black;
-                    padding: 100px 175px;
+                    padding: 125px 225px;
                 }
             }
         }
@@ -63,5 +64,12 @@
     .inverted {
         display: flex;
         flex-direction: row-reverse;
+    }
+}
+
+.grow {
+    a:hover {
+        .grow-hover;
+
     }
 }
