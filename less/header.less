@@ -1,13 +1,41 @@
-.top-container {
-	padding-left: 25%;
-	animation: fadein 5s;
-	margin: 125px 0;
+header {
+	animation: fadein 3s;
+	.side-margin;
+}
 
+.top-container {
+	// padding-left: 25%;
+	// margin: 125px 0 50px 0;
+	// border: solid red;
+	.side-margin;
 	h1 {
-		color: @cerise-red;
+		color: @header-color;
 	}
-	.button-a {
-		margin: 25px 0;
+}
+
+.contact-button {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	margin: 50px 0 75px 0;
+	a {
+		.default-btn(@fuchsia-blue, @white);
+		padding: 7px 30px;
+		text-decoration: none;
+	}
+}
+
+.scroll-arrow {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	i {
+		// margin: 100px 0 50px 0;
+		border-bottom: none;
+		&:hover {
+			// color: @buttercup;
+			.grow;
+		}
 	}
 }
 

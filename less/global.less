@@ -5,6 +5,8 @@
 
 html {
 	font-size: 62.5%;
+	overflow-y: scroll;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -33,7 +35,7 @@ h1 {
 
 h2 {
 	font-size: 4rem;
-	line-height: 1.5rem;
+	// line-height: 2rem;
 }
 
 h3 {
@@ -48,6 +50,10 @@ p {
 	font-size: 2rem;
 }
 
+ul {
+	list-style-type: none;
+}
+
 // img {
 // 	max-width: 100%;
 // 	height: auto;
@@ -57,6 +63,15 @@ p {
 // 	width: 100%;
 // 	margin: 0 auto;
 // }
+
+iframe {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	border: 0;
+}
 
 .button-a {
 	.default-btn(@fuchsia-blue, @white);
